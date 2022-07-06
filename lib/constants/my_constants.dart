@@ -1,0 +1,1 @@
+//Khai báo các const liên quan đến màu sắc, font chữ,.. vào đây
