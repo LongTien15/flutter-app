@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 
 /* 
-- get method request
+- method: GET
 - params: 
   + urlString:  api url dưới dạng string
 - return: raw data dưới dạng biến Response hoặc ném Exception nếu gặp lỗi   
@@ -16,7 +16,7 @@ Future<http.Response> makeGetRequest(String urlString) async {
 }
 
 /* 
-- post  method request
+- method: POST
 - params: 
   + urlString:  api url dưới dạng string
   + bodyInJson: body json cần truyền dưới dạng string
@@ -35,7 +35,7 @@ Future<http.Response> makePostRequest(
 }
 
 /* 
-- put method request
+- method: PUT
 - params: 
   + urlString:  api url dưới dạng string
   + bodyInJson: body json cần truyền dưới dạng string
@@ -54,10 +54,10 @@ Future<http.Response> makePutRequest(
 }
 
 /* 
-- patch method request  
+- method: PATCH 
 - params: 
-  - urlString:  api url dưới dạng string
-  - bodyInJson: body json cần truyền dưới dạng string
+  + urlString:  api url dưới dạng string
+  + bodyInJson: body json cần truyền dưới dạng string
 - return: raw data dưới dạng biến Response hoặc ném Exception nếu gặp lỗi    
 */
 Future<http.Response> makePatchRequest(
@@ -73,9 +73,9 @@ Future<http.Response> makePatchRequest(
 }
 
 /* 
-- delete method request  
+- method: PATCH 
 - params: 
-  - urlString:  api url dưới dạng string
+  + urlString:  api url dưới dạng string
 - return: raw data dưới dạng biến Response hoặc ném Exception nếu gặp lỗi    
 */
 Future<http.Response> deleteRequest(String urlString) async {
